@@ -1,8 +1,12 @@
-const handleEvent = (type, data, callback) => {
-    if (type === "message") {
-        console.log(`Mensaje recibido: ${data.msg}`);
-        callback("message", { msg: `Mensaje recibido: ${data.msg}` });
-    }
+import obtener_grupos from "./grupos.js";
+
+const handleEvent = (type, data) => {
+  let result;
+  if (type === "grupos") {
+    result = obtener_grupos();
+  }
+
+  return [type, result];
 };
 
-module.exports = { handleEvent };
+export default handleEvent;

@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Grupo A",
+    "selecciones": [1, 4, 5, 14]
+  },
+  {
+    "nombre": "Grupo B",
+    "selecciones": [8, 10, 11, 16]
+  },
+  {
+    "nombre": "Grupo C",
+    "selecciones": [2, 9, 12, 15]
+  },
+  {
+    "nombre": "Grupo D",
+    "selecciones": [3, 6, 7, 13]
+  }
+]
