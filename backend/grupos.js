@@ -1,6 +1,6 @@
 import fs from "fs";
 
-function obtener_grupos() {
+function obtenerGrupos() {
   let grupos = fs.readFileSync("data/grupos.json", "utf8");
   grupos = JSON.parse(grupos);
   let selecciones = fs.readFileSync("data/selecciones.json", "utf8");
@@ -23,4 +23,4 @@ function obtener_grupos() {
   return grupos;
 }
 
-export default obtener_grupos;
+export default obtenerGrupos;
