@@ -12,7 +12,7 @@ fetchData("grupos", (dataGrupos) => {
     let thead = document.createElement("thead");
     let tr = document.createElement("tr");
     tr.innerHTML =
-      "<th>Selección</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th>";
+      "<th>Selección</th><th class='numerico'>PJ</th><th class='numerico'>PG</th><th class='numerico'>PE</th><th class='numerico'>PP</th><th class='numerico'>GF</th><th class='numerico'>GC</th><th class='numerico'>DG</th><th class='numerico'>Pts</th>";
     thead.appendChild(tr);
     puntosGrupo.appendChild(thead);
     let tbody = document.createElement("tbody");
@@ -21,13 +21,17 @@ fetchData("grupos", (dataGrupos) => {
       let tr = document.createElement("tr");
       tr.innerHTML = `<td><img src="data:image/png;base64,${
         seleccion.bandera
-      }" alt="${seleccion.nombre}" /> ${seleccion.nombre}</td><td>${
+      }" alt="${seleccion.nombre}" /> ${
+        seleccion.nombre
+      }</td><td class='numerico'>${
         seleccion.PG + seleccion.PE + seleccion.PP
-      }</td><td>${seleccion.PG}</td><td>${seleccion.PE}</td><td>${
-        seleccion.PP
-      }</td><td>${seleccion.GF}</td><td>${seleccion.GC}</td><td>${
+      }</td><td class='numerico'>${seleccion.PG}</td><td class='numerico'>${
+        seleccion.PE
+      }</td><td class='numerico'>${seleccion.PP}</td><td class='numerico'>${
+        seleccion.GF
+      }</td><td class='numerico'>${seleccion.GC}</td><td class='numerico'>${
         seleccion.GF - seleccion.GC
-      }</td><td>${seleccion.Pts}</td>`;
+      }</td><td class='numerico'>${seleccion.Pts}</td>`;
       tbody.appendChild(tr);
     }
     puntosGrupo.appendChild(tbody);

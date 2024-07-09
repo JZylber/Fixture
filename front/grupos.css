@@ -10,10 +10,21 @@
 .grupo {
   display: flex;
   flex-direction: column;
+  width: 70%;
 }
 
 .grupo img {
   width: 30px;
   height: 20px;
   object-fit: cover;
+}
+
+.grupo table thead {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.grupo .numerico {
+  width: 24px;
+  text-align: center;
 }
