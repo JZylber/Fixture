@@ -6,7 +6,7 @@ const handleEvent = (type, data) => {
     result = obtener_grupos();
   }
 
-  return [type, result];
+  return result;
 };
 
 export default handleEvent;

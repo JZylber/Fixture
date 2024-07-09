@@ -1,4 +1,3 @@
-send("grupos", {});
-receive("grupos", (data) => {
+fetchData("grupos", (data) => {
   console.log(data);
 });
