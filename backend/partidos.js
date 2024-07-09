@@ -1,4 +1,5 @@
 import fs from "fs";
+import { actualizarPuntos } from "./puntos.js";
 
 export function obtenerPartidos() {
   let partidos = fs.readFileSync("data/partidos.json", "utf8");
@@ -27,10 +28,13 @@ export function obtenerPartidos() {
 export function actualizarPartido(data) {
   let partidos = fs.readFileSync("data/partidos.json", "utf8");
   partidos = JSON.parse(partidos);
+  let equipos;
+  let grupo;
   for (let i = 0; i < partidos.length; i++) {
     let partido = partidos[i];
     if (partido.id === data.partidoId) {
-      let equipos = partido.equipos;
+      grupo = partido.grupo;
+      equipos = partido.equipos;
       for (let j = 0; j < equipos.length; j++) {
         if (equipos[j].id === data.seleccionId) {
           equipos[j].goles = data.goles;
@@ -41,4 +45,7 @@ export function actualizarPartido(data) {
     }
   }
   fs.writeFileSync("data/partidos.json", JSON.stringify(partidos, null, 2));
+  if (equipos[0].goles !== null && equipos[1].goles !== null) {
+    actualizarPuntos(grupo, equipos);
+  }
 }
