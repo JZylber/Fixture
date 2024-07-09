@@ -3,112 +3,112 @@
     "id": 1,
     "nombre": "Argentina",
     "abreviatura": "ARG",
-    "logo": "img/banderas/ARG.png",
+    "bandera": "img/banderas/ARG.png",
     "ranking_fifa": 1
   },
   {
     "id": 2,
     "nombre": "Bolivia",
     "abreviatura": "BOL",
-    "logo": "img/banderas/BOL.png",
+    "bandera": "img/banderas/BOL.png",
     "ranking_fifa": 85
   },
   {
     "id": 3,
     "nombre": "Brasil",
     "abreviatura": "BRA",
-    "logo": "img/banderas/BRA.png",
+    "bandera": "img/banderas/BRA.png",
     "ranking_fifa": 4
   },
   {
     "id": 4,
     "nombre": "Canadá",
     "abreviatura": "CAN",
-    "logo": "img/banderas/CAN.png",
+    "bandera": "img/banderas/CAN.png",
     "ranking_fifa": 48
   },
   {
     "id": 5,
     "nombre": "Chile",
     "abreviatura": "CHI",
-    "logo": "img/banderas/CHI.png",
+    "bandera": "img/banderas/CHI.png",
     "ranking_fifa": 40
   },
   {
     "id": 6,
     "nombre": "Colombia",
     "abreviatura": "COL",
-    "logo": "img/banderas/COL.png",
+    "bandera": "img/banderas/COL.png",
     "ranking_fifa": 12
   },
   {
     "id": 7,
     "nombre": "Costa Rica",
     "abreviatura": "CRC",
-    "logo": "img/banderas/CRC.png",
+    "bandera": "img/banderas/CRC.png",
     "ranking_fifa": 52
   },
   {
     "id": 8,
     "nombre": "Ecuador",
     "abreviatura": "ECU",
-    "logo": "img/banderas/ECU.png",
+    "bandera": "img/banderas/ECU.png",
     "ranking_fifa": 30
   },
   {
     "id": 9,
     "nombre": "Estados Unidos",
     "abreviatura": "USA",
-    "logo": "img/banderas/USA.png",
+    "bandera": "img/banderas/USA.png",
     "ranking_fifa": 11
   },
   {
     "id": 10,
     "nombre": "Jamaica",
     "abreviatura": "JAM",
-    "logo": "img/banderas/JAM.png",
+    "bandera": "img/banderas/JAM.png",
     "ranking_fifa": 53
   },
   {
     "id": 11,
     "nombre": "México",
     "abreviatura": "MEX",
-    "logo": "img/banderas/MEX.png",
+    "bandera": "img/banderas/MEX.png",
     "ranking_fifa": 15
   },
   {
     "id": 12,
     "nombre": "Panamá",
     "abreviatura": "PAN",
-    "logo": "img/banderas/PAN.png",
+    "bandera": "img/banderas/PAN.png",
     "ranking_fifa": 43
   },
   {
     "id": 13,
     "nombre": "Paraguay",
     "abreviatura": "PAR",
-    "logo": "img/banderas/PAR.png",
+    "bandera": "img/banderas/PAR.png",
     "ranking_fifa": 58
   },
   {
     "id": 14,
     "nombre": "Perú",
     "abreviatura": "PER",
-    "logo": "img/banderas/PER.png",
+    "bandera": "img/banderas/PER.png",
     "ranking_fifa": 31
   },
   {
     "id": 15,
     "nombre": "Uruguay",
     "abreviatura": "URU",
-    "logo": "img/banderas/URU.png",
+    "bandera": "img/banderas/URU.png",
     "ranking_fifa": 14
   },
   {
     "id": 16,
     "nombre": "Venezuela",
     "abreviatura": "VEN",
-    "logo": "img/banderas/VEN.png",
+    "bandera": "img/banderas/VEN.png",
     "ranking_fifa": 54
   }
 ]

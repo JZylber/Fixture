@@ -16,6 +16,7 @@ function obtener_grupos() {
           break;
         }
       }
+      seleccion.bandera = fs.readFileSync(seleccion.bandera, "base64");
       grupo.selecciones[j] = seleccion;
     }
     return grupos;
