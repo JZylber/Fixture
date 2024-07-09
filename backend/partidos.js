@@ -46,6 +46,6 @@ export function actualizarPartido(data) {
   }
   fs.writeFileSync("data/partidos.json", JSON.stringify(partidos, null, 2));
   if (equipos[0].goles !== null && equipos[1].goles !== null) {
-    actualizarPuntos(grupo, equipos);
+    actualizarPuntos(grupo, partidos);
   }
 }
