@@ -8,19 +8,19 @@ function obtener_grupos() {
   for (let i = 0; i < grupos.length; i++) {
     let grupo = grupos[i];
     for (let j = 0; j < grupo.selecciones.length; j++) {
-      let seleccionId = grupo.selecciones[j];
+      let seleccionGrupo = grupo.selecciones[j];
       let seleccion = {};
       for (let k = 0; k < selecciones.length; k++) {
-        if (selecciones[k].id === seleccionId) {
+        if (selecciones[k].id === seleccionGrupo.id) {
           seleccion = selecciones[k];
           break;
         }
       }
-      seleccion.bandera = fs.readFileSync(seleccion.bandera, "base64");
-      grupo.selecciones[j] = seleccion;
+      seleccionGrupo.bandera = fs.readFileSync(seleccion.bandera, "base64");
+      seleccionGrupo.nombre = seleccion.nombre;
     }
-    return grupos;
   }
+  return grupos;
 }
 
 export default obtener_grupos;

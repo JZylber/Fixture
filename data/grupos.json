@@ -1,18 +1,38 @@
 [
   {
-    "nombre": "Grupo A",
-    "selecciones": [1, 4, 5, 14]
+    "id": "A",
+    "selecciones": [
+      { "id": 1, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 4, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 5, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 14, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 }
+    ]
   },
   {
-    "nombre": "Grupo B",
-    "selecciones": [8, 10, 11, 16]
+    "id": "B",
+    "selecciones": [
+      { "id": 8, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 10, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 11, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 16, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 }
+    ]
   },
   {
-    "nombre": "Grupo C",
-    "selecciones": [2, 9, 12, 15]
+    "id": "C",
+    "selecciones": [
+      { "id": 2, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 9, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 12, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 15, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 }
+    ]
   },
   {
-    "nombre": "Grupo D",
-    "selecciones": [3, 6, 7, 13]
+    "id": "D",
+    "selecciones": [
+      { "id": 3, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 6, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 13, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 },
+      { "id": 7, "PG": 0, "PE": 0, "PP": 0, "GF": 0, "GC": 0, "Pts": 0 }
+    ]
   }
 ]

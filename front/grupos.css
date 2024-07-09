@@ -1,0 +1,19 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grupos {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
