@@ -1,7 +1,6 @@
-import exp from "constants";
 import fs from "fs";
 
-function obtenerPartidos() {
+export function obtenerPartidos() {
   let partidos = fs.readFileSync("data/partidos.json", "utf8");
   partidos = JSON.parse(partidos);
   let selecciones = fs.readFileSync("data/selecciones.json", "utf8");
@@ -25,4 +24,21 @@ function obtenerPartidos() {
   return partidos;
 }
 
-export default obtenerPartidos;
+export function actualizarPartido(data) {
+  let partidos = fs.readFileSync("data/partidos.json", "utf8");
+  partidos = JSON.parse(partidos);
+  for (let i = 0; i < partidos.length; i++) {
+    let partido = partidos[i];
+    if (partido.id === data.partidoId) {
+      let equipos = partido.equipos;
+      for (let j = 0; j < equipos.length; j++) {
+        if (equipos[j].id === data.seleccionId) {
+          equipos[j].goles = data.goles;
+          break;
+        }
+      }
+      break;
+    }
+  }
+  fs.writeFileSync("data/partidos.json", JSON.stringify(partidos, null, 2));
+}

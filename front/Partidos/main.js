@@ -7,7 +7,7 @@ fetchData("partidos", (dataPartidos) => {
     partidoElement.classList.add("partido");
     partidoElement.dataset.id = partido.id;
     partidoElement.innerHTML = `
-        <div class="seleccion A">
+        <div class="seleccion A" data-seleccion-id=${partido.equipos[0].id}>
           <img src="data:image/png;base64,${partido.equipos[0].bandera}" alt="${
       partido.equipos[0].nombre
     }" />
@@ -17,7 +17,7 @@ fetchData("partidos", (dataPartidos) => {
           } />
         </div>
         <span>-</span>
-        <div class="seleccion B">
+        <div class="seleccion B" data-seleccion-id=${partido.equipos[1].id}>
             <input class="goles" type="number" min="0" max="99" ${
               partido.equipos[1].goles
                 ? `value=${partido.equipos[1].goles}`
@@ -32,3 +32,16 @@ fetchData("partidos", (dataPartidos) => {
     partidos.appendChild(partidoElement);
   }
 });
+
+function actualizarGoles(event) {
+  const goles = Number(event.target.value);
+  const seleccionId = Number(event.target.parentElement.dataset.seleccionId);
+  const partidoId = Number(event.target.parentElement.parentElement.dataset.id);
+  postData("actualizarPartido", {
+    partidoId: partidoId,
+    seleccionId: seleccionId,
+    goles: goles,
+  });
+}
+
+partidos.addEventListener("change", actualizarGoles);
