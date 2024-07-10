@@ -56,7 +56,7 @@ function ordenarGrupo(grupo) {
   return grupo;
 }
 
-function limpiarGrupo(grupo) {
+export function limpiarGrupo(grupo) {
   for (let i = 0; i < grupo.selecciones.length; i++) {
     let seleccion = grupo.selecciones[i];
     seleccion.PG = 0;

@@ -1,16 +1,18 @@
 const partidos = document.getElementById("partidos");
+const resetear = document.getElementById("resetear");
 
-fetchData("partidos", (dataPartidos) => {
-  for (let i = 0; i < dataPartidos.length; i++) {
-    let partido = dataPartidos[i];
-    let partidoElement = document.createElement("div");
-    partidoElement.classList.add("partido");
-    partidoElement.dataset.id = partido.id;
-    partidoElement.innerHTML = `
+function cargarDatos() {
+  fetchData("partidos", (dataPartidos) => {
+    for (let i = 0; i < dataPartidos.length; i++) {
+      let partido = dataPartidos[i];
+      let partidoElement = document.createElement("div");
+      partidoElement.classList.add("partido");
+      partidoElement.dataset.id = partido.id;
+      partidoElement.innerHTML = `
         <div class="seleccion A" data-seleccion-id=${partido.equipos[0].id}>
           <img src="data:image/png;base64,${partido.equipos[0].bandera}" alt="${
-      partido.equipos[0].nombre
-    }" />
+        partido.equipos[0].nombre
+      }" />
           <span>${partido.equipos[0].nombre}</span>
           <input class="goles" type="number" min="0" max="99" ${
             partido.equipos[0].goles ? `value=${partido.equipos[0].goles}` : ""
@@ -25,13 +27,15 @@ fetchData("partidos", (dataPartidos) => {
             } />
           <span>${partido.equipos[1].nombre}</span>
           <img src="data:image/png;base64,${partido.equipos[1].bandera}" alt="${
-      partido.equipos[1].nombre
-    }" />
+        partido.equipos[1].nombre
+      }" />
         </div>
     `;
-    partidos.appendChild(partidoElement);
-  }
-});
+      partidos.appendChild(partidoElement);
+    }
+  });
+}
+cargarDatos();
 
 function actualizarGoles(event) {
   const goles = Number(event.target.value);
@@ -44,4 +48,12 @@ function actualizarGoles(event) {
   });
 }
 
+function resetearYCargar() {
+  postData("resetear", {}, () => {
+    partidos.innerHTML = "";
+    cargarDatos();
+  });
+}
+
 partidos.addEventListener("change", actualizarGoles);
+resetear.addEventListener("click", resetearYCargar);
