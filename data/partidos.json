@@ -4,11 +4,11 @@
     "equipos": [
       {
         "id": 1,
-        "goles": null
+        "goles": 2
       },
       {
         "id": 4,
-        "goles": null
+        "goles": 0
       }
     ],
     "grupo": "A",
@@ -19,11 +19,11 @@
     "equipos": [
       {
         "id": 5,
-        "goles": null
+        "goles": 0
       },
       {
         "id": 14,
-        "goles": null
+        "goles": 0
       }
     ],
     "grupo": "A",
@@ -118,5 +118,125 @@
     ],
     "grupo": "D",
     "fase": 1
+  },
+  {
+    "id": 9,
+    "equipos": [
+      {
+        "id": 4,
+        "goles": 1
+      },
+      {
+        "id": 14,
+        "goles": 0
+      }
+    ],
+    "grupo": "A",
+    "fase": 2
+  },
+  {
+    "id": 10,
+    "equipos": [
+      {
+        "id": 1,
+        "goles": 1
+      },
+      {
+        "id": 5,
+        "goles": 0
+      }
+    ],
+    "grupo": "A",
+    "fase": 2
+  },
+  {
+    "id": 11,
+    "equipos": [
+      {
+        "id": 8,
+        "goles": null
+      },
+      {
+        "id": 10,
+        "goles": null
+      }
+    ],
+    "grupo": "B",
+    "fase": 2
+  },
+  {
+    "id": 12,
+    "equipos": [
+      {
+        "id": 11,
+        "goles": null
+      },
+      {
+        "id": 16,
+        "goles": null
+      }
+    ],
+    "grupo": "B",
+    "fase": 2
+  },
+  {
+    "id": 13,
+    "equipos": [
+      {
+        "id": 9,
+        "goles": null
+      },
+      {
+        "id": 12,
+        "goles": null
+      }
+    ],
+    "grupo": "C",
+    "fase": 2
+  },
+  {
+    "id": 14,
+    "equipos": [
+      {
+        "id": 2,
+        "goles": null
+      },
+      {
+        "id": 15,
+        "goles": null
+      }
+    ],
+    "grupo": "C",
+    "fase": 2
+  },
+  {
+    "id": 15,
+    "equipos": [
+      {
+        "id": 6,
+        "goles": null
+      },
+      {
+        "id": 7,
+        "goles": null
+      }
+    ],
+    "grupo": "D",
+    "fase": 2
+  },
+  {
+    "id": 16,
+    "equipos": [
+      {
+        "id": 3,
+        "goles": null
+      },
+      {
+        "id": 13,
+        "goles": null
+      }
+    ],
+    "grupo": "D",
+    "fase": 2
   }
 ]

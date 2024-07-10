@@ -9,7 +9,7 @@ export function resetearFixture() {
   }
   let partidos = fs.readFileSync("data/partidos.json", "utf8");
   partidos = JSON.parse(partidos);
-  for (let i = 0; i < grupos.length; i++) {
+  for (let i = 0; i < partidos.length; i++) {
     let partido = partidos[i];
     let equipos = partido.equipos;
     for (let j = 0; j < equipos.length; j++) {

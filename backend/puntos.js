@@ -105,7 +105,11 @@ export function actualizarPuntos(grupoId, partidos) {
       limpiarGrupo(grupo);
       for (let j = 0; j < partidos.length; j++) {
         let partido = partidos[j];
-        if (partido.grupo === grupo.id) {
+        if (
+          partido.grupo === grupo.id &&
+          partido.equipos[0].goles !== null &&
+          partido.equipos[1].goles !== null
+        ) {
           sumarPartido(grupo, partido);
         }
       }

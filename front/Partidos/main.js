@@ -1,10 +1,27 @@
 const partidos = document.getElementById("partidos");
 const resetear = document.getElementById("resetear");
 
+function nuevaFase(fase) {
+  const faseElement = document.createElement("div");
+  faseElement.classList.add("fase");
+  faseElement.innerHTML = `
+    <h3>${typeof fase === "number" ? `Fase ${fase}` : fase}</h3>
+  `;
+  return faseElement;
+}
+
 function cargarDatos() {
   fetchData("partidos", (dataPartidos) => {
+    let fase = dataPartidos[0].fase;
+    let faseElement = nuevaFase(fase);
     for (let i = 0; i < dataPartidos.length; i++) {
       let partido = dataPartidos[i];
+      fasePartido = partido.fase;
+      if (fasePartido !== fase) {
+        partidos.appendChild(faseElement);
+        fase = fasePartido;
+        faseElement = nuevaFase(fase);
+      }
       let partidoElement = document.createElement("div");
       partidoElement.classList.add("partido");
       partidoElement.dataset.id = partido.id;
@@ -15,13 +32,15 @@ function cargarDatos() {
       }" />
           <span>${partido.equipos[0].nombre}</span>
           <input class="goles" type="number" min="0" max="99" ${
-            partido.equipos[0].goles ? `value=${partido.equipos[0].goles}` : ""
+            partido.equipos[0].goles !== null
+              ? `value=${partido.equipos[0].goles}`
+              : ""
           } />
         </div>
         <span>-</span>
         <div class="seleccion B" data-seleccion-id=${partido.equipos[1].id}>
             <input class="goles" type="number" min="0" max="99" ${
-              partido.equipos[1].goles
+              partido.equipos[1].goles !== null
                 ? `value=${partido.equipos[1].goles}`
                 : ""
             } />
@@ -31,8 +50,9 @@ function cargarDatos() {
       }" />
         </div>
     `;
-      partidos.appendChild(partidoElement);
+      faseElement.appendChild(partidoElement);
     }
+    partidos.appendChild(faseElement);
   });
 }
 cargarDatos();

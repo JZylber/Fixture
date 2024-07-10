@@ -40,3 +40,13 @@
   height: 20px;
   object-fit: cover;
 }
+
+.fase {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+}
+
+.fase + .fase {
+  border-top: 1px solid gray;
+}
