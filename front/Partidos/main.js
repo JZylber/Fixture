@@ -1,3 +1,5 @@
+connect2Server();
+
 const partidos = document.getElementById("partidos");
 const resetear = document.getElementById("resetear");
 
@@ -11,7 +13,7 @@ function nuevaFase(fase) {
 }
 
 function cargarDatos() {
-  fetchData("partidos", (dataPartidos) => {
+  getData("partidos", (dataPartidos) => {
     let fase = dataPartidos[0].fase;
     let faseElement = nuevaFase(fase);
     for (let i = 0; i < dataPartidos.length; i++) {

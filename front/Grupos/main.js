@@ -1,6 +1,8 @@
+connect2Server();
+
 const grupos = document.getElementById("grupos");
 
-fetchData("grupos", (dataGrupos) => {
+getData("grupos", (dataGrupos) => {
   for (let i = 0; i < dataGrupos.length; i++) {
     let grupo = dataGrupos[i];
     let grupoElement = document.createElement("div");
