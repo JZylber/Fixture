@@ -1,0 +1,14 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.partido {
+  display: flex;
+  flex-direction: column;
+}
+
+.partido img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}

@@ -6,11 +6,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>Grupos</title>
   </head>
+
   <body>
+    <template id="partido">
+      <div class="partido">
+        <div class="equipo">
+          <img class="bandera" />
+          <span class="nombre"></span>
+          <input class="goles" type="number" />
+          <input class="penales oculto" type="number" />
+        </div>
+      </div>
+    </template>
     <a href="../Partidos">Partidos</a>
-    <a href="../Llaves">Llaves</a>
-    <h1>Grupos</h1>
-    <div id="grupos" class="grupos"></div>
+    <a href="../Partidos">Grupos</a>
+    <h1>Llaves</h1>
+    <div id="llaves" class="llaves"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/JZylber/SoqueTIC-Client@v1.2.6/soquetic-client.js"></script>
     <script src="main.js"></script>

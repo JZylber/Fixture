@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "orden": 1,
+    "fase": "cuartos",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "orden": 2,
+    "fase": "cuartos",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "orden": 3,
+    "fase": "cuartos",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "orden": 4,
+    "fase": "cuartos",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "orden": 1,
+    "fase": "semis",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "orden": 2,
+    "fase": "semis",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "orden": 1,
+    "fase": "tercer_puesto",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "orden": 1,
+    "fase": "final",
+    "equipos": [
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      },
+      {
+        "id": null,
+        "goles": null,
+        "penales": null
+      }
+    ]
+  }
+]
