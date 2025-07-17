@@ -5,12 +5,10 @@
     "fase": "cuartos",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -22,12 +20,10 @@
     "fase": "cuartos",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -39,12 +35,10 @@
     "fase": "cuartos",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -56,12 +50,10 @@
     "fase": "cuartos",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -73,7 +65,6 @@
     "fase": "semis",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
@@ -90,12 +81,10 @@
     "fase": "semis",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -107,12 +96,10 @@
     "fase": "tercer_puesto",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }
@@ -124,12 +111,10 @@
     "fase": "final",
     "equipos": [
       {
-        "id": null,
         "goles": null,
         "penales": null
       },
       {
-        "id": null,
         "goles": null,
         "penales": null
       }

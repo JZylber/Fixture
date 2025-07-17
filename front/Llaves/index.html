@@ -11,15 +11,14 @@
   </head>
 
   <body>
-    <template id="partido">
-      <div class="partido">
-        <div class="equipo">
-          <img class="bandera" />
-          <span class="nombre"></span>
-          <input class="goles" type="number" />
-          <input class="penales oculto" type="number" />
-        </div>
-      </div>
+    <template id="equipo">
+      <img class="bandera" />
+      <span class="nombre"></span>
+      <input class="goles" type="number" max="99" min="0" />
+      <input class="penales oculto" type="number" max="99" min="0" />
+    </template>
+    <template id="llave">
+      <div class="partidosLlave"></div>
     </template>
     <a href="../Partidos">Partidos</a>
     <a href="../Partidos">Grupos</a>

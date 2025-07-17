@@ -22,7 +22,6 @@ export function resetearFixture() {
     let partido = partidosLllaves[i];
     let equipos = partido.equipos;
     for (let j = 0; j < equipos.length; j++) {
-      equipos[j].id = null;
       equipos[j].goles = null;
       equipos[j].penales = null;
     }

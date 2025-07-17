@@ -1,12 +1,31 @@
 connect2Server();
 
 getData("llaves", (dataLlaves) => {
-  const { llaves, grupos } = dataLlaves;
+  const llaves = dataLlaves;
+  console.log("Llaves:", llaves);
   const llavesDiv = document.getElementById("llaves");
-  const partidosLlaves = document.getElementById("partido");
-  const [grupoA, grupoB, grupoC, grupoD] = grupos;
+  const equipoTemplate = document.getElementById("equipo");
+  const llaveTemplate = document.getElementById("llave");
+
   //Cuartos de final
-  let equipoA = grupoA.selecciones[0];
-  let equipoB = grupoB.selecciones[1];
-  let newPartido = partidosLlaves.content.cloneNode(true);
+  llaves.forEach((llave) => {
+    if (llave.fase === "cuartos") {
+      const llaveDiv = llaveTemplate.content.cloneNode(true);
+      llaveDiv
+        .querySelector(".partidosLlave")
+        .classList.add(`cuartos${llave.orden}`);
+      const equipos = llave.equipos;
+      equipos.forEach((equipo) => {
+        const equipoDiv = equipoTemplate.content.cloneNode(true);
+        equipoDiv.querySelector(
+          ".bandera"
+        ).src = `data:image/png;base64,${equipo.bandera}`;
+        equipoDiv.querySelector(".nombre").textContent = equipo.nombre;
+        equipoDiv.querySelector(".goles").value = equipo.goles || "";
+        equipoDiv.querySelector(".penales").value = equipo.penales || "";
+        llaveDiv.querySelector(".partidosLlave").appendChild(equipoDiv);
+      });
+      llavesDiv.appendChild(llaveDiv);
+    }
+  });
 });

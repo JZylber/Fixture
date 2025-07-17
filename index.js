@@ -8,8 +8,6 @@ onEvent("grupos", () => obtenerGrupos());
 onEvent("partidos", () => obtenerPartidos());
 onEvent("actualizarPartido", (data) => actualizarPartido(data));
 onEvent("resetear", () => resetearFixture());
-onEvent("llaves", () => {
-  return { llaves: obtenerllaves(), grupos: obtenerGrupos() };
-});
+onEvent("llaves", () => obtenerllaves());
 
 startServer();

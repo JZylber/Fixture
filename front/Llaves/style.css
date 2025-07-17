@@ -12,3 +12,59 @@
   height: 20px;
   object-fit: cover;
 }
+
+.llaves {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.partidosLlave {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.partidosLlave input[type="number"] {
+  width: 30px;
+  height: 16px;
+  text-align: center;
+}
+
+.partidosLlave img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.cuartos1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cuartos2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.cuartos3 {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.cuartos4 {
+  grid-column: 5;
+  grid-row: 3;
+}
+
+.semis1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.semis2 {
+  grid-column: 4;
+  grid-row: 2;
+}
