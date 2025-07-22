@@ -2,7 +2,7 @@ connect2Server();
 
 const grupos = document.getElementById("grupos");
 
-getData("grupos", (dataGrupos) => {
+getEvent("grupos", (dataGrupos) => {
   for (let i = 0; i < dataGrupos.length; i++) {
     let grupo = dataGrupos[i];
     let grupoElement = document.createElement("div");

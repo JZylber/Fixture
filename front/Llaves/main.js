@@ -1,6 +1,6 @@
 connect2Server();
 
-getData("llaves", (dataLlaves) => {
+getEvent("llaves", (dataLlaves) => {
   const llaves = dataLlaves;
   console.log("Llaves:", llaves);
   const llavesDiv = document.getElementById("llaves");

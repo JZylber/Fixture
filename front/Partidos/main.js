@@ -13,7 +13,7 @@ function nuevaFase(fase) {
 }
 
 function cargarDatos() {
-  getData("partidos", (dataPartidos) => {
+  getEvent("partidos", (dataPartidos) => {
     let fase = dataPartidos[0].fase;
     let faseElement = nuevaFase(fase);
     for (let i = 0; i < dataPartidos.length; i++) {
@@ -63,7 +63,7 @@ function actualizarGoles(event) {
   const goles = Number(event.target.value);
   const seleccionId = Number(event.target.parentElement.dataset.seleccionId);
   const partidoId = Number(event.target.parentElement.parentElement.dataset.id);
-  postData("actualizarPartido", {
+  postEvent("actualizarPartido", {
     partidoId: partidoId,
     seleccionId: seleccionId,
     goles: goles,
@@ -71,7 +71,7 @@ function actualizarGoles(event) {
 }
 
 function resetearYCargar() {
-  postData("resetear", {}, () => {
+  getEvent("resetear", () => {
     partidos.innerHTML = "";
     cargarDatos();
   });
