@@ -4,11 +4,11 @@
     "equipos": [
       {
         "id": 1,
-        "goles": 3
+        "goles": null
       },
       {
         "id": 4,
-        "goles": 2
+        "goles": null
       }
     ],
     "grupo": "A",
@@ -19,11 +19,11 @@
     "equipos": [
       {
         "id": 5,
-        "goles": 4
+        "goles": null
       },
       {
         "id": 14,
-        "goles": 4
+        "goles": null
       }
     ],
     "grupo": "A",
@@ -34,11 +34,11 @@
     "equipos": [
       {
         "id": 8,
-        "goles": 4
+        "goles": null
       },
       {
         "id": 16,
-        "goles": 5
+        "goles": null
       }
     ],
     "grupo": "B",

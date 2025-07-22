@@ -1,5 +1,5 @@
 {
-  "name": "test_ejs",
+  "name": "fixture",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "express": "^4.18.2",
     "fs": "0.0.1-security",
     "socket.io": "^4.8.1",
-    "soquetic": "^1.3.0"
+    "soquetic": "^1.4.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
